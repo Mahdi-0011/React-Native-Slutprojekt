@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { View, Text } from 'react-native'
-import Startpage from '../Pages/Startpage'
+import { View, Text, StyleSheet } from 'react-native'
+import Startpage from '../Pages/Homepage'
 import Searchpage from '../Pages/Searchpage'
 import Favoritepage from '../Pages/Favoritepage'
 
@@ -9,7 +9,17 @@ const Tab = createBottomTabNavigator()
 
 function Navigation() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarStyle: {
+          backgroundColor: 'black',
+        },
+        headerStyle: {
+          backgroundColor: 'black',
+        },
+        headerTintColor: 'white',
+        tabBarActiveTintColor: 'white',
+      }}>
       <Tab.Screen
         name='Movie app'
         component={Startpage}
@@ -48,3 +58,8 @@ function Navigation() {
 }
 
 export default Navigation
+
+
+const styles = StyleSheet.create({
+
+})
