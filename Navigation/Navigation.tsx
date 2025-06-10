@@ -24,6 +24,8 @@ function Navigation() {
         name='Movie app'
         component={Startpage}
         options={{
+          title: 'Home',
+          headerTitle: 'Movie App',
           tabBarIcon: () => (
             <View>
               <Text>🏠</Text>
@@ -35,6 +37,7 @@ function Navigation() {
       name='Search'
       component={Searchpage} 
       options={{
+        headerTitle: 'Movie App',
         tabBarIcon: () => (<View>
           <Text>
             🔍
