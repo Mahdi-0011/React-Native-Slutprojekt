@@ -19,6 +19,7 @@ function Navigation() {
         },
         headerTintColor: 'white',
         tabBarActiveTintColor: 'white',
+        headerTitleAlign: 'center',
       }}>
       <Tab.Screen
         name='Movie app'
@@ -63,6 +64,3 @@ function Navigation() {
 export default Navigation
 
 
-const styles = StyleSheet.create({
-
-})
