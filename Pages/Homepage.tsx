@@ -1,18 +1,18 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import Layout from '../Layout/Layout';
 
 
 
-function Startpage() {
+function Hometpage() {
   return (
     <Layout>
     <View>
-      <Text>Startpage </Text>
+      <Text>Homepage </Text>
     </View>
     </Layout>
 
   );
 }
 
-export default Startpage;
+export default Hometpage;
