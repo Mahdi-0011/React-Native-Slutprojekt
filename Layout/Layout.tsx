@@ -39,7 +39,5 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 15,
-    paddingBottom: 80,
   },
 });
