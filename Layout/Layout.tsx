@@ -1,7 +1,15 @@
 /** @format */
 
 import React from "react";
-import { View, Text, StyleSheet, ScrollView, SafeAreaView, StatusBar, Platform } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  SafeAreaView,
+  StatusBar,
+  Platform,
+} from "react-native";
 import Footer from "../Components/footer";
 import Header from "../Components/header";
 
@@ -28,7 +36,7 @@ const styles = StyleSheet.create({
   safeView: {
     backgroundColor: "skyblue",
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   title: {
     fontSize: 20,

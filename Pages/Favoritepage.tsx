@@ -1,17 +1,15 @@
-import React from 'react'
-import { Text, View } from 'react-native'
-import Layout from '../Layout/Layout'
+import React from "react";
+import { Text, View } from "react-native";
+import Layout from "../Layout/Layout";
 
 function Favoritepage() {
   return (
     <Layout>
-    <View>
-       <Text>
-         Favoritepage
-      </Text>
-    </View>
+      <View>
+        <Text>Favoritepage</Text>
+      </View>
     </Layout>
-  )
+  );
 }
 
-export default Favoritepage
+export default Favoritepage;

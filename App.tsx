@@ -3,8 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import Navigation from "./Navigation/Navigation";
 import { StatusBar } from "react-native";
 
-
-
 export default function App() {
   return (
     <>
@@ -15,4 +13,3 @@ export default function App() {
     </>
   );
 }
-

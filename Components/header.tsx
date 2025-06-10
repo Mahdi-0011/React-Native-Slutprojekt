@@ -1,12 +1,12 @@
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
 function Header() {
   return (
     <View style={styles.header}>
       <Text style={styles.title}>Header</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
-})
+});
 
-export default Header
+export default Header;
