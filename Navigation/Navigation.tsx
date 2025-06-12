@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import Startpage from "../Pages/Homepage";
 import Searchpage from "../Pages/Searchpage";
 import Favoritepage from "../Pages/Favoritepage";
@@ -13,6 +13,7 @@ function Navigation() {
       screenOptions={{
         tabBarStyle: {
           backgroundColor: "black",
+          borderTopColor: "black",
         },
         headerStyle: {
           backgroundColor: "black",
