@@ -2,16 +2,11 @@
 
 import React from "react";
 import {
-  View,
-  Text,
   StyleSheet,
-  ScrollView,
   SafeAreaView,
   StatusBar,
   Platform,
 } from "react-native";
-import Footer from "../Components/footer";
-import Header from "../Components/header";
 
 type Props = {
   children: React.ReactNode;
@@ -21,12 +16,7 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <SafeAreaView style={styles.safeView}>
-        {/* <Header/> */}
-        <ScrollView contentContainerStyle={styles.body}>
-          <Text style={styles.title}>body</Text>
           {children}
-        </ScrollView>
-        {/* <Footer /> */}
       </SafeAreaView>
     </>
   );
@@ -34,7 +24,7 @@ export default function Layout({ children }: Props) {
 
 const styles = StyleSheet.create({
   safeView: {
-    backgroundColor: "skyblue",
+    backgroundColor: "rgba(26, 25, 22, 0.831)",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
