@@ -28,14 +28,4 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  body: {
-    backgroundColor: "rgb(234, 214, 179)",
-    flexGrow: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
 });

@@ -1,13 +1,11 @@
 import React from "react";
-import { Text, View } from "react-native";
 import Layout from "../Layout/Layout";
+import MovieList from "../Servies/popularapi";
 
 function Hometpage() {
   return (
     <Layout>
-      <View>
-        <Text>Homepage </Text>
-      </View>
+        <MovieList/>
     </Layout>
   );
 }

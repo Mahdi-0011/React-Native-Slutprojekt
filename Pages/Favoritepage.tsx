@@ -5,9 +5,7 @@ import Layout from "../Layout/Layout";
 function Favoritepage() {
   return (
     <Layout>
-      <View>
         <Text>Favoritepage</Text>
-      </View>
     </Layout>
   );
 }
