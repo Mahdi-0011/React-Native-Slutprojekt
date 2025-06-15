@@ -1,13 +1,23 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View, FlatList } from "react-native";
+import { useFavorites } from "../FavoritesContext/FavoritesContext";
+import MovieCard from "../Components/movieCard";
 import Layout from "../Layout/Layout";
 
-function Favoritepage() {
+const FavoritesPage = () => {
+  const { favorites } = useFavorites();
+
   return (
     <Layout>
-        <Text>Favoritepage</Text>
+    <View>
+      <FlatList
+        data={favorites}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <MovieCard movie={item} />}
+      />
+    </View>
     </Layout>
   );
-}
+};
 
-export default Favoritepage;
+export default FavoritesPage;
